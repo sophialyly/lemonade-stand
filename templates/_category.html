@@ -1,0 +1,14 @@
+<div class="row category">
+    {{if .IsOrientRight}}
+        Hello
+    {{end}}
+    <a href="/categories/{{.ID}}">
+            <div class="columns small-4">
+                <img src="/img/{{.ImageURL}}" alt="{{.ImageURL}}" />
+            </div>
+        <div class="columns small-8">
+            <h2>{{.Title}}</h2>
+            <p>{{.Description}}</p>
+        </div>
+    </a>
+</div>
